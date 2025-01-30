@@ -30,10 +30,36 @@
 </head>
 
 
-<body class="sora container mx-auto sora-font">
+<body class="sora">
     <!-- header section  -->
-    <header>
-
+    <header class="container mx-auto">
+        <!-- navbar  -->
+        <nav class="flex justify-between items-center h-16 lg:h-28 border-b-2 border-b-main-color lg:border-none px-5">
+            <div>
+                <img class="hidden lg:block" src="assets/images/logo-header.png" alt="logo">
+                <img class="lg:hidden" src="assets/icons/logo-mobile.svg" alt="">
+            </div>
+            <div class="flex justify-end items-center gap-8 xl:gap-28">
+                <ul class="hidden lg:flex gap-8">
+                    <li><a class="text-xl text-black hover:text-main-color" href="#">Product</a></li>
+                    <li><a class="text-xl text-black hover:text-main-color" href="#">Services</a></li> 
+                    <li><a class="text-xl text-black hover:text-main-color" href="#">Contacts us</a></li>
+                </ul>
+                <div class="hidden lg:flex justify-between space-x-6">
+                    <div class="flex items-center gap-6">
+                        <a href="#"><img src="assets/icons/search.svg" alt="search here"></a>
+                        <a href="#"><img src="assets/icons/cart.svg" alt="shopping cart"></a>
+                    </div>
+                    <div class="space-x-3">
+                        <button class="text-xl border border-main-color px-7 py-2.5 rounded-lg text-black bg-transparent hover:bg-hover-color hover:text-white">Login</button>
+                        <button class="text-xl px-7 py-2.5 rounded-lg text-black bg-main-color hover:bg-hover-color text-white hover:text-white">Register</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:hidden">
+                <img src="assets/icons/hamburg.svg" alt="hamburger">
+            </div>
+        </nav>
     </header>
 
     <!-- main section  -->
