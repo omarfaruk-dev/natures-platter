@@ -35,46 +35,78 @@
     <header class="bg-gradient-to-b from-white to-bg-color">
         <div class="container mx-auto mb-12 md:mb-20 lg:mb-36 ">
             <!-- navbar  -->
-        <nav class="flex justify-between items-center h-16 lg:h-28 border-b-2 border-b-main-color lg:border-none px-5">
-            <div>
-                <img class="hidden lg:block" src="assets/images/logo-header.png" alt="logo">
-                <img class="lg:hidden" src="assets/icons/logo-mobile.svg" alt="">
-            </div>
-            <div class="flex justify-end items-center gap-8 xl:gap-28">
-                <ul class="hidden lg:flex gap-8">
-                    <li><a class="text-xl text-black hover:text-main-color" href="#">Product</a></li>
-                    <li><a class="text-xl text-black hover:text-main-color" href="#">Services</a></li> 
-                    <li><a class="text-xl text-black hover:text-main-color" href="#">Contacts us</a></li>
-                </ul>
-                <div class="hidden lg:flex justify-between space-x-6">
-                    <div class="flex items-center gap-6">
-                        <a href="#"><img src="assets/icons/search.svg" alt="search here"></a>
-                        <a href="#"><img src="assets/icons/cart.svg" alt="shopping cart"></a>
-                    </div>
-                    <div class="space-x-3">
-                        <button class="text-xl border border-main-color px-7 py-2.5 rounded-lg text-black bg-transparent hover:bg-hover-color hover:text-white">Login</button>
-                        <button class="text-xl px-7 py-2.5 rounded-lg text-black bg-main-color hover:bg-hover-color text-white hover:text-white">Register</button>
+            <nav
+                class="flex justify-between items-center h-16 lg:h-28 border-b-2 border-b-main-color lg:border-none px-5">
+                <div>
+                    <img class="hidden lg:block" src="assets/images/logo-header.png" alt="logo">
+                    <img class="lg:hidden" src="assets/icons/logo-mobile.svg" alt="">
+                </div>
+                <div class="flex justify-end items-center gap-8 xl:gap-28">
+                    <ul class="hidden lg:flex gap-8">
+                        <li><a class="text-xl text-black hover:text-main-color" href="#">Product</a></li>
+                        <li><a class="text-xl text-black hover:text-main-color" href="#">Services</a></li>
+                        <li><a class="text-xl text-black hover:text-main-color" href="#">Contacts us</a></li>
+                    </ul>
+                    <div class="hidden lg:flex justify-between space-x-6">
+                        <div class="flex items-center gap-6">
+                            <a href="#"><img src="assets/icons/search.svg" alt="search here"></a>
+                            <a href="#"><img src="assets/icons/cart.svg" alt="shopping cart"></a>
+                        </div>
+                        <div class="space-x-3">
+                            <button
+                                class="text-xl border border-main-color px-7 py-2.5 rounded-lg text-black bg-transparent hover:bg-hover-color hover:text-white">Login</button>
+                            <button
+                                class="text-xl px-7 py-2.5 rounded-lg bg-main-color hover:bg-hover-color text-white">Register</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="lg:hidden">
-                <img src="assets/icons/hamburg.svg" alt="hamburger">
-            </div>
-        </nav>
-        <!-- hero section -->
-         <section class="mt-12 md:mt-20 lg:mt-24 text-center">
-            <div class="px-5">
-                <h1 class="text-3xl md:text-5xl lg:text-[3.5rem] font-semibold text-black leading-10">Freshness <span class="text-main-color">You Can <br>Count</span> On, Prices You’ll Love!</h1>
-                <p class="text-base font-light md:font-base my-4 md:my-8 max-w-[45rem] mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-            </div>
-            <img class="mx-auto" src="assets/images/hero-vegetables.png" alt="hero vegetables image">
-         </section>
+                <div class="lg:hidden">
+                    <img src="assets/icons/hamburg.svg" alt="hamburger">
+                </div>
+            </nav>
+            <!-- hero section -->
+            <section class="mt-12 md:mt-20 lg:mt-24 text-center">
+                <div class="px-5">
+                    <h1 class="text-3xl md:text-5xl lg:text-[3.5rem] font-semibold text-black leading-10">Freshness
+                        <span class="text-main-color">You Can <br>Count</span> On, Prices You’ll Love!</h1>
+                    <p class="text-base font-light md:font-base my-4 md:my-8 max-w-[45rem] mx-auto">Shop your daily
+                        essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered
+                        every day!</p>
+                </div>
+                <img class="mx-auto" src="assets/images/hero-vegetables.png" alt="hero vegetables image">
+            </section>
         </div>
     </header>
 
     <!-- main section  -->
     <main>
+        <!-- service section  -->
+        <section class="container mx-auto my-12 lg:my-36 px-5 xl:px-36">
+            <h2 class="text-2xl md:text-4xl font-semibold mb-8 md:mb-12 text-main-color">Services</h2>
+            <!-- card container  -->
+            <div class="space-y-5 sm:space-y-0 sm:grid grid-cols-2 lg:flex gap-6">
+                <!-- card 1  -->
+                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center">
+                    <img class="mx-auto" src="assets/images/service.png" alt="24/7 service">
+                    <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">24/7 Services </h3>
+                    <p class="text-base md:text-xl font-light">Shop for groceries anytime! Our store is open 24/7,
+                        ensuring fresh products whenever you need them.</p>
+                </div>
+                <!-- card 2  -->
+                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center">
+                    <img class="mx-auto" src="assets/images/delivery.png" alt="24/7 service">
+                    <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">Fast Delivery</h3>
+                    <p class="text-base md:text-xl font-light">Enjoy quick, hassle-free grocery delivery to your doorstep, ensuring freshness and convenience.</p>
+                </div>
+                <!-- card 3  -->
+                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center sm:col-span-2 sm:w-1/2 justify-self-center lg:w-auto">
+                    <img class="mx-auto" src="assets/images/healthy.png" alt="24/7 service">
+                    <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">Healthy Products</h3>
+                    <p class="text-base md:text-xl font-light">We provide high-quality, organic, and fresh groceries to support your healthy lifestyle every day.</p>
+                </div>
+            </div>
 
+        </section>
     </main>
 
     <!-- footer section  -->
