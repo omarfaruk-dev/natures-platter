@@ -22,6 +22,7 @@
                         'main-color': '#179800',
                         'hover-color': '#115414',
                         'bg-color': '#EFEBE3',
+                        'green-light': 'rgba(255, 255, 255, 0.7)',
                     }
                 }
             }
@@ -348,9 +349,9 @@
              </div>
         </section>
         <!-- subscribe section  -->
-        <section class="container mx-auto">
+        <section class="container mx-auto mt-14">
             <!-- container  -->
-            <div class="md:flex justify-between items-center mx-5 bg-bg-color border border-main-color py-10 px-5 rounded-2xl text-center md:text-justify">
+            <div class=" md:flex justify-between items-center mx-5 bg-bg-color border border-main-color py-10 px-5 rounded-2xl text-center md:text-justify">
                 <div class="flex-1">
                     <img class="mx-auto" src="assets/images/vegetable-busket.png" alt="vegetable busket">
                 </div>
@@ -363,12 +364,40 @@
                 </div>
             </div>
         </section>
-
-
     </main>
 
     <!-- footer section  -->
-    <footer>
+    <footer class="bg-main-color pt-52">
+        <!-- container  -->
+         <div class="container mx-auto py-12 lg:py-36 px-5">
+            <!-- footer main -->
+             <div class="space-y-9 md:space-y-0 md:flex justify-between">
+                <!-- branding  -->
+                 <div class="flex-1">
+                    <img src="assets/images/logo-footer.png" alt="logo">
+                    <p class="text-base text-green-light md:text-xl mt-3">Bringing you fresh, quality groceries with fast delivery and 24/7 service. Shop smart, eat healthy! 🍏</p>
+                 </div>
+                 <!-- menu item  -->
+                 <div class="flex-1">
+                    <ul class="space-y-5 md:space-y-8">
+                        <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Product</a></li>
+                        <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Services</a></li>
+                        <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Contact Us</a></li>
+                    </ul>
+                 </div>
+                 <!-- social  -->
+                 <div class="flex-1 md:flex md:justify-end flex-col items-end">
+                    <h3 class="text-sm md:text-base md:font-medium text-white mb-6">Follow Us</h3>
+                    <div class="flex gap-8">
+                        <img class="hover:opacity-75 cursor-pointer" src="assets/icons/facebook.svg" alt="facebook">
+                        <img class="hover:opacity-75 cursor-pointer" src="assets/icons/instagram.svg" alt="instagram">
+                        <img class="hover:opacity-75 cursor-pointer" src="assets/icons/linkedin.svg" alt="linkedin">
+                        <img class="hover:opacity-75 cursor-pointer" src="assets/icons/youtube.svg" alt="youtube">
+
+                    </div>
+                 </div>
+             </div>
+         </div>
 
     </footer>
 </body>
