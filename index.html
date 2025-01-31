@@ -37,13 +37,13 @@
         <div class="container mx-auto mb-12 md:mb-20 lg:mb-36 ">
             <!-- navbar  -->
             <nav
-                class="flex justify-between items-center h-16 lg:h-28 border-b-2 border-b-main-color lg:border-none px-5">
-                <div>
-                    <img class="hidden lg:block" src="assets/images/logo-header.png" alt="logo">
-                    <img class="lg:hidden" src="assets/icons/logo-mobile.svg" alt="">
+                class="flex justify-between items-center h-16 lg:h-28 border-b-2 border-b-main-color md:border-none px-5">
+                <div class="md:pt-4 lg:pt-0">
+                    <img class="hidden md:block" src="assets/images/logo-header.png" alt="logo">
+                    <img class="md:hidden" src="assets/icons/logo-mobile.svg" alt="">
                 </div>
                 <div class="flex justify-end items-center gap-8 xl:gap-28">
-                    <ul class="hidden lg:flex gap-8">
+                    <ul class="hidden md:flex gap-8">
                         <li><a class="text-xl text-black hover:text-main-color" href="#">Product</a></li>
                         <li><a class="text-xl text-black hover:text-main-color" href="#">Services</a></li>
                         <li><a class="text-xl text-black hover:text-main-color" href="#">Contacts us</a></li>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="lg:hidden">
+                <div class="md:hidden">
                     <img src="assets/icons/hamburg.svg" alt="hamburger">
                 </div>
             </nav>
@@ -71,9 +71,22 @@
                     <h1 class="text-3xl md:text-5xl lg:text-[3.5rem] font-semibold text-black leading-10">Freshness
                         <span class="text-main-color">You Can <br>Count</span> On, Prices You’ll Love!
                     </h1>
+
                     <p class="text-base font-light md:font-base my-4 md:my-8 max-w-[45rem] mx-auto">Shop your daily
                         essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered
                         every day!</p>
+
+                    <!-- animation -->
+                    <div class="space-x-5">
+                        <img class=" inline mx-auto slow-bounce-1  w-16 h-16" src="assets/icons/carrot.png" alt="">
+                        <img class="top-52 inline mx-auto slow-spin  w-16 h-16" src="assets/icons/capsicum.png" alt="">
+                        <img class="inline mx-auto new-b w-16 h-16" src="assets/icons/red-tomato.png" alt="">
+                        <img class="inline mx-auto new-a w-16 h-16" src="assets/icons/leaf.png" alt="">
+                        <img class="inline mx-auto rotate-infinite  w-16 h-16" src="assets/icons/green-chilli.png"
+                            alt="">
+                        <img class="inline mx-auto slow-bounce  w-16 h-16" src="assets/icons/banana.png" alt="">
+
+                    </div>
                 </div>
                 <img class="mx-auto" src="assets/images/hero-vegetables.png" alt="hero vegetables image">
             </section>
@@ -88,14 +101,14 @@
             <!-- card container  -->
             <div class="space-y-5 sm:space-y-0 sm:grid grid-cols-2 lg:flex gap-6">
                 <!-- card 1  -->
-                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center">
+                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center hover:shadow-md">
                     <img class="mx-auto" src="assets/images/service.png" alt="24/7 service">
                     <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">24/7 Services </h3>
                     <p class="text-base md:text-xl font-light">Shop for groceries anytime! Our store is open 24/7,
                         ensuring fresh products whenever you need them.</p>
                 </div>
                 <!-- card 2  -->
-                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center">
+                <div class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center hover:shadow-md">
                     <img class="mx-auto" src="assets/images/delivery.png" alt="24/7 service">
                     <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">Fast Delivery</h3>
                     <p class="text-base md:text-xl font-light">Enjoy quick, hassle-free grocery delivery to your
@@ -103,7 +116,7 @@
                 </div>
                 <!-- card 3  -->
                 <div
-                    class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center sm:col-span-2 sm:w-1/2 justify-self-center lg:w-auto">
+                    class="rounded-2xl bg-bg-color px-6 pt-6 pb-9 text-center sm:col-span-2 sm:w-1/2 justify-self-center lg:w-auto hover:shadow-md">
                     <img class="mx-auto" src="assets/images/healthy.png" alt="24/7 service">
                     <h3 class="text-xl lg:text-2xl font-semibold mt-6 mb-3">Healthy Products</h3>
                     <p class="text-base md:text-xl font-light">We provide high-quality, organic, and fresh groceries to
@@ -298,98 +311,114 @@
         <!-- faq section -->
         <section class="bg-bg-color pt-12 lg:pt-36 px-5">
             <!-- container  -->
-             <div class="container mx-auto">
-                <h2 class="text-2xl lg:text-4xl font-semibold text-main-color mb-8 lg:mb-10 xl:mb-0">Frequently Asked Questions</h2>
-            <!-- container  -->
-            <div class="flex flex-col-reverse md:flex-row md:items-center gap-4 lg:gap-20 mx-auto max-w-fit">
+            <div class="container mx-auto">
+                <h2 class="text-2xl lg:text-4xl font-semibold text-main-color mb-8 lg:mb-10 xl:mb-0">Frequently Asked
+                    Questions</h2>
+                <!-- container  -->
+                <div class="flex flex-col-reverse md:flex-row md:items-center gap-4 lg:gap-20 mx-auto max-w-fit">
 
-                <!-- accordion -->
-                <div class="flex-1 space-y-3  max-w-[34rem]">
-                    <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
-                        <input type="radio" name="my-accordion-2" checked="checked">
-                        <div class="collapse-title text-xl font-medium">Do you offer same-day delivery?</div>
-                        <div class="collapse-content">
-                            <p class="text-base text-black">Yes! We provide fast same-day delivery for orders placed before the cutoff time in your area.</p>
+                    <!-- accordion -->
+                    <div class="flex-1 space-y-3  max-w-[34rem]">
+                        <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
+                            <input type="radio" name="my-accordion-2" checked="checked">
+                            <div class="collapse-title text-xl font-medium">Do you offer same-day delivery?</div>
+                            <div class="collapse-content">
+                                <p class="text-base text-black">Yes! We provide fast same-day delivery for orders placed
+                                    before the cutoff time in your area.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
+                            <input type="radio" name="my-accordion-2" checked="checked">
+                            <div class="collapse-title text-xl font-medium">Are your products fresh and organic?</div>
+                            <div class="collapse-content">
+                                <p class="text-base text-black">Absolutely! We ensure the highest quality by offering
+                                    fresh, organic, and carefully sourced groceries.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
+                            <input type="radio" name="my-accordion-2" checked="checked">
+                            <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
+                            <div class="collapse-content">
+                                <p class="text-base text-black">We accept credit/debit cards, mobile payments, and cash
+                                    on delivery for your convenience.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
+                            <input type="radio" name="my-accordion-2" checked="checked">
+                            <div class="collapse-title text-xl font-medium">Is there a minimum order requirement?</div>
+                            <div class="collapse-content">
+                                <p class="text-base text-black">No, you can order any amount! However, free delivery may
+                                    apply only to orders above a certain value.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
+                            <input type="radio" name="my-accordion-2" checked="checked">
+                            <div class="collapse-title text-xl font-medium"> How can I track my order?</div>
+                            <div class="collapse-content">
+                                <p class="text-base text-black">Once your order is placed, you’ll receive a tracking
+                                    link via SMS or email to monitor the delivery status.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
-                        <input type="radio" name="my-accordion-2" checked="checked">
-                        <div class="collapse-title text-xl font-medium">Are your products fresh and organic?</div>
-                        <div class="collapse-content">
-                            <p class="text-base text-black">Absolutely! We ensure the highest quality by offering fresh, organic, and carefully sourced groceries.</p>
-                        </div>
+                    <!-- img  -->
+                    <div class="mb-10 md:mb-0 flex-1">
+                        <img class="mx-auto" src="assets/images/faq.svg" alt="faq">
                     </div>
-                    <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
-                        <input type="radio" name="my-accordion-2" checked="checked">
-                        <div class="collapse-title text-xl font-medium">What payment methods do you accept?</div>
-                        <div class="collapse-content">
-                            <p class="text-base text-black">We accept credit/debit cards, mobile payments, and cash on delivery for your convenience.</p>
-                        </div>
-                    </div>
-                    <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
-                        <input type="radio" name="my-accordion-2" checked="checked">
-                        <div class="collapse-title text-xl font-medium">Is there a minimum order requirement?</div>
-                        <div class="collapse-content">
-                            <p class="text-base text-black">No, you can order any amount! However, free delivery may apply only to orders above a certain value.</p>
-                        </div>
-                    </div>
-                    <div class="collapse collapse-arrow bg-white border-2 border-main-color rounded-lg">
-                        <input type="radio" name="my-accordion-2" checked="checked">
-                        <div class="collapse-title text-xl font-medium"> How can I track my order?</div>
-                        <div class="collapse-content">
-                            <p class="text-base text-black">Once your order is placed, you’ll receive a tracking link via SMS or email to monitor the delivery status.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- img  -->
-                <div class="mb-10 md:mb-0 flex-1">
-                    <img class="mx-auto" src="assets/images/faq.svg" alt="faq">
                 </div>
             </div>
-             </div>
         </section>
         <!-- subscribe section  -->
         <section class="bg-bg-color -mt-36 lg:-mt-14">
-          <!-- section container  -->
-           <div class="container mx-auto relative -bottom-52">
-              <!-- container  -->
-              <div class=" md:flex justify-between items-center mx-5 bg-white border border-main-color py-10 px-5 rounded-2xl text-center md:text-justify">
-                <div class="flex-1 h-auto">
-                    <img class="mx-auto w-1/2 md:w-auto" src="assets/images/vegetable-busket.png" alt="vegetable busket">
-                </div>
-                <div class="flex-1">
-                    <h2 class="mt-6 md:mt-0  mb-3 md:mb-5 text-2xl md:text-4xl text-main-color md:text-black font-bold md:font-semibold">Get Grocery News</h2>
-                    <h3 class="mb-5 md:mb-9">Subscribe now for the latest deals, fresh arrivals, and exclusive discounts delivered to your inbox!
-                   </h3>
-                   <input type="email" name="email" id="email" placeholder="Enter Email..." class="mb-3 md:mb-9 input input-bordered w-full max-w-xs focus:border-main-color focus:ring-main-color focus:ring-1 "/> <br>
-                   <button class="text-sm md:text-xl px-6 md:px-7  py-2 md:py-2.5 rounded-md md:rounded-lg bg-main-color hover:bg-hover-color text-white">Register</button>
+            <!-- section container  -->
+            <div class="container mx-auto relative -bottom-52">
+                <!-- container  -->
+                <div
+                    class=" md:flex justify-between items-center mx-5 bg-gradient-to-b from-white to-bg-color border border-main-color py-10 px-5 rounded-2xl text-center md:text-justify">
+                    <div class="flex-1 h-auto">
+                        <img class="mx-auto w-1/2 md:w-auto" src="assets/images/vegetable-busket.png"
+                            alt="vegetable busket">
+                    </div>
+                    <div class="flex-1">
+                        <h2
+                            class="mt-6 md:mt-0  mb-3 md:mb-5 text-2xl md:text-4xl text-main-color md:text-black font-bold md:font-semibold">
+                            Get Grocery News</h2>
+                        <h3 class="mb-5 md:mb-9">Subscribe now for the latest deals, fresh arrivals, and exclusive
+                            discounts delivered to your inbox!
+                        </h3>
+                        <input type="email" name="email" id="email" placeholder="Enter Email..."
+                            class="mb-3 md:mb-9 input input-bordered border-main-color w-full max-w-xs focus:border-main-color focus:ring-main-color focus:ring-1 " />
+                        <br>
+                        <button
+                            class="text-sm md:text-xl px-6 md:px-7  py-2 md:py-2.5 rounded-md md:rounded-lg bg-main-color hover:bg-hover-color text-white">Register</button>
+                    </div>
                 </div>
             </div>
-           </div>
         </section>
     </main>
 
     <!-- footer section  -->
     <footer class="bg-main-color pt-52">
         <!-- container  -->
-         <div class="container mx-auto py-12 lg:py-36 px-5">
+        <div class="container mx-auto py-12 lg:py-36 px-5">
             <!-- footer main -->
-             <div class="space-y-9 md:space-y-0 md:flex md:gap-10">
+            <div class="space-y-9 md:space-y-0 md:flex md:gap-10">
                 <!-- branding  -->
-                 <div class="flex-1">
+                <div class="flex-1">
                     <img src="assets/images/logo-footer.png" alt="logo">
-                    <p class="text-base text-green-light md:text-xl mt-3">Bringing you fresh, quality groceries with fast delivery and 24/7 service. Shop smart, eat healthy! 🍏</p>
-                 </div>
-                 <!-- menu item  -->
-                 <div class="flex-1 md:flex  items-end justify-center">
+                    <p class="text-base text-green-light md:text-xl mt-3">Bringing you fresh, quality groceries with
+                        fast delivery and 24/7 service. Shop smart, eat healthy! 🍏</p>
+                </div>
+                <!-- menu item  -->
+                <div class="flex-1 md:flex  items-end justify-center">
                     <ul class="space-y-5 md:space-y-8">
                         <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Product</a></li>
                         <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Services</a></li>
-                        <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Contact Us</a></li>
+                        <li><a class="text-base md:text-xl text-white hover:text-hover-color" href="#">Contact Us</a>
+                        </li>
                     </ul>
-                 </div>
-                 <!-- social  -->
-                 <div class="flex-1 md:flex md:justify-end  flex-col items-end">
+                </div>
+                <!-- social  -->
+                <div class="flex-1 md:flex md:justify-end  flex-col items-end">
                     <h3 class="text-sm md:text-base md:font-medium text-white mb-6">Follow Us</h3>
                     <div class="flex gap-8">
                         <img class="hover:opacity-75 cursor-pointer" src="assets/icons/facebook.svg" alt="facebook">
@@ -398,9 +427,9 @@
                         <img class="hover:opacity-75 cursor-pointer" src="assets/icons/youtube.svg" alt="youtube">
 
                     </div>
-                 </div>
-             </div>
-         </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
 </body>
